@@ -1,0 +1,175 @@
+/* Main Background */
+[data-testid="stAppViewContainer"]{
+    background-color: #06b4f8 !important;
+    
+}
+.stApp {
+
+    background-color: #06b4f8 !important;
+
+    background-image:
+
+        url("https://cdn-icons-png.flaticon.com/512/2966/2966486.png"),
+
+        url("https://cdn-icons-png.flaticon.com/512/3774/3774299.png"),
+
+        url("https://cdn-icons-png.flaticon.com/512/822/822143.png"),
+
+        url("https://cdn-icons-png.flaticon.com/512/2382/2382461.png");
+
+    background-repeat:
+
+        no-repeat,
+
+        no-repeat,
+
+        no-repeat,
+
+        no-repeat;
+
+    background-position:
+
+        5% 10%,
+
+        95% 15%,
+
+        10% 85%,
+
+        90% 90%;
+
+    background-size:
+
+        70px,
+
+        70px,
+
+        70px,
+
+        70px;
+
+}
+
+
+/* Title */
+
+.main-title {
+
+    text-align: center;
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    color: white;
+
+    text-shadow: 0 0 12px #0099ff;
+
+    margin-bottom: 20px;
+
+}
+/* Health Emojis */
+
+.stApp::before {
+
+    content: "🩺 💊 ❤️ 🍎";
+
+    position: fixed;
+
+    top: 100px;
+
+    left: 30px;
+
+    font-size: 50px;
+
+    opacity: 0.3;
+
+}
+
+.stApp::after {
+
+    content: "🏥 🩹 💚 🥗";
+
+    position: fixed;
+
+    bottom: 100px;
+
+    right: 30px;
+
+    font-size: 50px;
+
+    opacity: 0.3;
+
+}
+
+ 
+/* Chat Messages */
+
+[data-testid="stChatMessage"] {
+
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 20px;
+
+    padding: 12px;
+
+    margin: 10px 0;
+
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+/* User Message */
+
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-user"]) {
+
+    background-color: #e3f2fd;
+
+}
+
+/* Assistant Message */
+
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) {
+
+    background-color: #ffffff;
+
+}
+
+/* Sidebar */
+
+[data-testid="stSidebar"] {
+
+    background-color: #dff6ff;
+
+}
+
+/* Input Box */
+
+.stChatInputContainer {
+
+    background-color: white;
+
+    border-radius: 15px;
+
+}
+
+/* Buttons */
+
+.stButton > button {
+
+    background-color: #00aaff;
+
+    color: white;
+
+    border-radius: 12px;
+
+    border: none;
+
+    font-weight: bold;
+
+}
+
+.stButton > button:hover {
+
+    background-color: #0088cc;
+
+}
