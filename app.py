@@ -18,7 +18,7 @@ with open("style.css") as f:
     )
 model =whisper.load_model("base")
 client = Groq (
-    api_key=st.secrets["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"]
+    api_key="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
 )
 
 st.markdown(
